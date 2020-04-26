@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MyCounterComponent } from './my-counter.component';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from '../counter.reducer';
 
 describe('MyCounterComponent', () => {
   let component: MyCounterComponent;
@@ -8,7 +10,9 @@ describe('MyCounterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MyCounterComponent ]
+      declarations: [ MyCounterComponent ],
+      imports: [ StoreModule.forRoot({count: counterReducer}) ],
+
     })
     .compileComponents();
   }));
