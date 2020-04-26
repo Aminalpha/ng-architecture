@@ -11,7 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material.module';
 import { NgSharedModule } from 'ng-shared';
 import {StoreModule} from '@ngrx/store';
-import { MyCounterComponent } from './my-counter/my-counter.component'
+import { MyCounterComponent } from './my-counter/my-counter.component';
 import { counterReducer } from './counter.reducer';
 
 @NgModule({
