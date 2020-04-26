@@ -13,5 +13,8 @@ export class UsersDisplayComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  convertToUpperCase(value: string) {
+    return value.toUpperCase();
+  }
 
 }
