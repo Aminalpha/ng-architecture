@@ -3,6 +3,7 @@ import { increment, decrement, reset } from './counter.actions';
 
 export const initialState = 0;
 
+// tslint:disable-next-line:variable-name
 const _counterReducer = createReducer(
     initialState,
     on(increment, state => state + 1),
