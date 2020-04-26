@@ -10,7 +10,7 @@ import {increment, decrement, reset} from '../counter.actions';
 })
 export class MyCounterComponent implements OnInit {
   count$: Observable<number>;
-  constructor(private store: Store<{ count: number }>) { 
+  constructor(private store: Store<{ count: number }>) {
     this.count$ = store.pipe(select('count'));
   }
 
